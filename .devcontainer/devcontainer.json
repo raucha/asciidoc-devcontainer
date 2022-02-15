@@ -10,10 +10,14 @@
 	"dockerFile": "../Dockerfile",
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": {
+		"AsciiDoc.asciidoctor_command": "asciidoctor -a outdir=tmp -a imagesdir=tmp -a imagesoutdir=tmp -r asciidoctor-diagram -o-"
+	},
 	
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": []
+	"extensions": [
+		"asciidoctor.asciidoctor-vscode"
+	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
